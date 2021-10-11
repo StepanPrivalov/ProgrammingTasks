@@ -1,13 +1,17 @@
+print("Enter the array in one string: ", end="")
+s = input()
+ar = s.split()
 a = []
-print("Enter the number of elements: ", end = "")
-n = int(input())
+for i in range(len(ar)):
+    if ar[i].isdigit() == True:
+        a.append(int(ar[i]))
+    else:
+        print("No letters or words allowed!!")
+        
+print(*a)
 
-for i in range(n):
-    elem = int(input())
-    a.append(elem)
-
-for i in range(n - 1):
-    for j in range(i, n):
+for i in range(len(a) - 1):
+    for j in range(i, len(a)):
         if a[i] > a[j]:
             a[j], a[i] = a[i], a[j]
 

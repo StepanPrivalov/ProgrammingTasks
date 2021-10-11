@@ -1,6 +1,6 @@
 def square(a,b):
-    d = A * (2**0.5)
-    if D >= d:
+    d = a * (2**0.5)
+    if b >= d:
         print("Yes, u can")
     else:
         print("NONONO")
